@@ -40,7 +40,7 @@ const Index = (props: any) => {
   }, [gifs]);
 
   let mainStyle: React.CSSProperties = {};
-  if (gifs) {
+  if (gifs && gifs.data[0]) {
     mainStyle.backgroundImage = `url("${gifs.data[curIndex].images.original.url}")`;
   }
 
@@ -66,10 +66,7 @@ const Index = (props: any) => {
           </span>
         </div>
       </div>
-      <main
-        style={mainStyle}
-        className="flex h-screen w-screen bg-gradient-to-b from-gray-100 to-gray-300"
-      >
+      <main style={mainStyle} className="flex h-screen w-screen bg-cover">
         <iframe
           src="https://www.solvency.art/view/420?fullscreen=true&embed=true&display=iframe&size=large"
           frameBorder="0"
