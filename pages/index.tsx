@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import { GifsResult, GiphyFetch } from "@giphy/js-fetch-api";
+import Marquee from "react-fast-marquee";
 
 function getRandomInt(max: number) {
   return Math.floor(Math.random() * max);
@@ -42,6 +43,13 @@ const Index = (props: any) => {
   if (gifs) {
     mainStyle.backgroundImage = `url("${gifs.data[curIndex].images.original.url}")`;
   }
+
+  const marqueeItems: string[] = [];
+  for (let i = 0; i < 25; ++i) {
+    marqueeItems.push("SOLVENCY #420");
+  }
+  const marqueeText = marqueeItems.join(" ");
+
   return (
     <div>
       <Head>
@@ -51,6 +59,13 @@ const Index = (props: any) => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
       </Head>
+      <div className="relative flex overflow-x-hidden">
+        <div className="py-2 whitespace-nowrap">
+          <span className="text-2xl mx-4">
+            <Marquee>{marqueeText}</Marquee>
+          </span>
+        </div>
+      </div>
       <main
         style={mainStyle}
         className="flex h-screen w-screen bg-gradient-to-b from-gray-100 to-gray-300"
