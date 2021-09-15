@@ -64,6 +64,7 @@ const Index = (props: any) => {
           className="py-2 whitespace-nowrap"
           style={{
             color: "white",
+            backgroundPosition: "250px 600px",
             backgroundImage:
               "url('https://solvency.s3.amazonaws.com/420-1619139823837.jpg')",
           }}
