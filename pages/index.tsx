@@ -16,8 +16,9 @@ const Index = (props: any) => {
   }
   const gf = new GiphyFetch(apiKey);
   useEffect(() => {
-    gf.search("cannabis", {
+    gf.search("plants", {
       limit: 50,
+      sort: "recent",
     }).then((x) => {
       setGifs(x);
     });
@@ -35,7 +36,7 @@ const Index = (props: any) => {
     return () => {
       window.clearInterval(interval);
     };
-  });
+  }, [gifs]);
 
   let mainStyle: React.CSSProperties = {};
   if (gifs) {
