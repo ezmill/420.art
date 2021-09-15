@@ -72,7 +72,7 @@ const Index = (props: any) => {
           frameBorder="0"
           loading="lazy"
           allow="'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          className="h-1/2 w-1/2 m-auto"
+          className="h-3/4 w-3/4 m-auto"
         ></iframe>
       </main>
     </div>
