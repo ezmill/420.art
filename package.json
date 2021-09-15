@@ -1,26 +1,30 @@
 {
-    "name": "tailwind-ts-starter",
-    "version": "0.0.1",
-    "scripts": {
-      "dev": "next",
-      "build": "next build",
-      "start": "next start"
-    },
-    "dependencies": {
-      "@tailwindcss/ui": "0.6.2",
-      "next": "10",
-      "react": "^16.13.1",
-      "react-dom": "^16.13.1",
-      "swr": "^0.3.6"
-    },
-    "devDependencies": {
-      "@types/node": "14.14.2",
-      "@types/react": "16.9.53",
-      "postcss-flexbugs-fixes": "4.2.1",
-      "postcss-preset-env": "^6.7.0",
-      "tailwindcss": "^1.7.4",
-      "ts-node": "^9.0.0",
-      "typescript": "4.0.3"
-    },
-    "license": "MIT"
-  }
+  "name": "tailwind-ts-starter",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next -p 4200",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@giphy/js-fetch-api": "^4.1.2",
+    "@giphy/react-components": "^5.3.1",
+    "@tailwindcss/ui": "0.6.2",
+    "add": "^2.0.6",
+    "next": "10",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "swr": "^0.3.6",
+    "yarn": "^1.22.11"
+  },
+  "devDependencies": {
+    "@types/node": "14.14.2",
+    "@types/react": "16.9.53",
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.7.4",
+    "ts-node": "^9.0.0",
+    "typescript": "4.0.3"
+  },
+  "license": "MIT"
+}
