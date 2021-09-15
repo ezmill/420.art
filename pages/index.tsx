@@ -60,7 +60,14 @@ const Index = (props: any) => {
         />
       </Head>
       <div className="relative flex overflow-x-hidden">
-        <div className="py-2 whitespace-nowrap">
+        <div
+          className="py-2 whitespace-nowrap"
+          style={{
+            color: "white",
+            backgroundImage:
+              "url('https://solvency.s3.amazonaws.com/420-1619139823837.jpg')",
+          }}
+        >
           <span className="text-2xl mx-4">
             <Marquee>{marqueeText}</Marquee>
           </span>
