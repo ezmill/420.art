@@ -40,9 +40,9 @@ const Index = (props: any) => {
   }, [gifs]);
 
   let mainStyle: React.CSSProperties = {};
-  if (gifs && gifs.data[0]) {
-    mainStyle.backgroundImage = `url("${gifs.data[curIndex].images.original.url}")`;
-  }
+  // if (gifs && gifs.data[0]) {
+  //   mainStyle.backgroundImage = `url("smoke.mp4")`;
+  // }
 
   const marqueeItems: string[] = [];
   for (let i = 0; i < 25; ++i) {
@@ -59,7 +59,7 @@ const Index = (props: any) => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
       </Head>
-      <div className="relative flex overflow-x-hidden">
+      {/* <div className="relative flex overflow-x-hidden">
         <div
           className="py-2 whitespace-nowrap"
           style={{
@@ -73,14 +73,16 @@ const Index = (props: any) => {
             <Marquee>{marqueeText}</Marquee>
           </span>
         </div>
-      </div>
-      <main style={mainStyle} className="flex h-screen w-screen bg-cover">
+      </div> */}
+      <main style={mainStyle} className="absolute flex h-screen w-screen bg-cover">
+
+        <video className="object-cover absolute z-0 w-full h-full top-0 left-0"  muted autoPlay loop src="smoke.mp4"></video>
         <iframe
           src="https://www.solvency.art/view/420?fullscreen=true&embed=true&display=iframe&size=large"
           frameBorder="0"
           loading="lazy"
           allow="'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          className="h-3/4 w-3/4 m-auto"
+          className="h-3/4 w-3/4 m-auto z-10"
         ></iframe>
       </main>
     </div>
