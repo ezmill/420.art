@@ -10,3 +10,28 @@
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
+@font-face{
+  font-family: 'Unica';
+  src: url("/Unica77-Regular.otf");
+}
+@font-face{
+  font-family: 'Europa';
+  src: url("/EuropaGroteskSH-Ext.otf");
+}
+@font-face {font-family: "Plain Medium"; src: url("//db.onlinewebfonts.com/t/79b7c5a85a309b71cdff972e812d1e45.eot"); src: url("//db.onlinewebfonts.com/t/79b7c5a85a309b71cdff972e812d1e45.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/79b7c5a85a309b71cdff972e812d1e45.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/79b7c5a85a309b71cdff972e812d1e45.woff") format("woff"), url("//db.onlinewebfonts.com/t/79b7c5a85a309b71cdff972e812d1e45.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/79b7c5a85a309b71cdff972e812d1e45.svg#Plain Medium") format("svg"); }
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+body{
+    font-family: 'Unica';
+
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    color: #189218;
+}
+
+h1{
+  font-family: 'Europa';
+  letter-spacing: 0.05rem;
+}

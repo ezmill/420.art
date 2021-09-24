@@ -44,6 +44,7 @@ const Index = (props: any) => {
   //   mainStyle.backgroundImage = `url("smoke.mp4")`;
   // }
 
+
   const marqueeItems: string[] = [];
   for (let i = 0; i < 25; ++i) {
     marqueeItems.push("SOLVENCY #420");
@@ -74,7 +75,10 @@ const Index = (props: any) => {
           </span>
         </div>
       </div> */}
-      <main style={mainStyle} className="absolute flex h-screen w-screen bg-cover">
+      <main style={mainStyle} className="absolute flex justify-center h-screen w-screen bg-cover">
+        <div className="flex absolute z-10 mt-20 items-center w-3/4 m-auto">
+          <h1 className="text-3xl">420.art</h1>
+        </div>
 
         <video className="object-cover absolute z-0 w-full h-full top-0 left-0"  muted autoPlay loop src="smoke.mp4"></video>
         <iframe
